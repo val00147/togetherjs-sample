@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>TogetherJSサンプル</title>
+    <style>
+      #btn {
+        width: 150px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TogetherJSサンプル</h1>
+    <button onclick="TogetherJS(this); return false;">TogetherJSを起動！</button>
+    
+    
+    
+    
+    <script>
+            
+      // 音声ボタン非表示
+      var TogetherJSConfig_disableWebRTC = true;
+      
+      // 初動のポップアップを非表示
+      var TogetherJSConfig_suppressInvite = true;
+      
+      // 参加確認のポップアップを非表示にして自動接続
+      var TogetherJSConfig_suppressJoinConfirmation = true;
+      
+      // クリックエフェクト非表示
+      var TogetherJSConfig_dontShowClicks = true
+      
+    </script>
+    
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
+    
+    <script>
+      
+      // イベント処理のサンプル事例
+      
+      // 起動した時に何らかの処理をする
+      TogetherJSConfig_on_ready = function () {
+      
+          // 実行したい処理を書く
+      
+      };
+
+      // 終了した時に何らかの処理をする
+      TogetherJSConfig_on_close = function () {
+      
+          // 実行したい処理を書く
+      
+      };
+
+    </script>
+  </body>
+</html>
